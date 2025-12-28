@@ -9,7 +9,7 @@ import numpy as np
 # Page config
 st.set_page_config(page_title="Helmet Detection", layout="centered")
 
-st.title("🪖 Helmet Detection App")
+st.title("Helmet Detection App")
 st.write("Upload an image to detect helmet or no-helmet")
 
 # Load model 
@@ -41,3 +41,4 @@ if uploaded_file is not None:
                 st.success(f"Helmets detected: {len(boxes)}")
             else:
                 st.warning("No helmet detected")
+

@@ -5,6 +5,7 @@ import streamlit as st
 from ultralytics import YOLO
 from PIL import Image
 import numpy as np
+import cv2
 
 # Page config
 st.set_page_config(page_title="Helmet Detection", layout="centered")
@@ -41,4 +42,5 @@ if uploaded_file is not None:
                 st.success(f"Helmets detected: {len(boxes)}")
             else:
                 st.warning("No helmet detected")
+
 

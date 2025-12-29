@@ -1,6 +1,3 @@
-import os
-os.environ["ULTRALYTICS_NO_CV2"] = "1"
-
 import streamlit as st
 from ultralytics import YOLO
 from PIL import Image
@@ -42,5 +39,6 @@ if uploaded_file is not None:
                 st.success(f"Helmets detected: {len(boxes)}")
             else:
                 st.warning("No helmet detected")
+
 
 
